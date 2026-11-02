@@ -54,6 +54,19 @@ public class EmployeeServices : IEmployeeServices
     //    );
     //}
 
+    //public async Task<Employee?> GetEmployeeById(Guid id)
+    //{
+    //    var connection = _sqlConnection.CreateConnection();
+
+    //    return await connection.QueryFirstOrDefaultAsync<Employee>(
+    //        "GetEmployeeById",
+    //        new
+    //        {
+    //            EmployeeId = id,
+    //        },
+    //        commandType: CommandType.StoredProcedure
+    //        );
+    //}
     public async Task<Employee?> GetEmployeeById(Guid id)
     {
         var connection = _sqlConnection.CreateConnection();
